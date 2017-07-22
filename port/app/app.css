@@ -1,0 +1,231 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+/* begin CK CSS*/
+.background-image {
+  background-image: url("./images/introduction_background2.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+.container {
+  background-color: green;
+  height:100%;
+  margin-top: 3%;
+}
+
+.nav-container {
+  display: flex;
+  background-color: #f2f2f2;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.nav-container a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.footer-container {
+  display: flex;
+  background-color: #f2f2f2;
+  justify-content: center;
+  width: 100%; /* Full width */
+}
+
+.footer-container p {
+  margin: auto;
+}
+
+.landing-container{
+  display: flex;
+  padding-top: 0%;
+  margin-bottom: 15%;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.color-container{
+  background-color: #95B2C6;
+}
+
+.introduction-container{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.profile_pic-container{
+  padding-top: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile_pic-container img{
+  width: 45%;
+  height: 45%;
+}
+
+.contact-container {
+  display: flex;
+  background-color: grey;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-bottom: 20%;
+}
+
+@media (max-width: 700px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 20%;
+  }
+  .about-box {
+    width: 165px;
+    padding: 15px;
+    margin: 2% auto;
+    text-align: center;
+  }
+}
+
+.about-box {
+  width: 75%;
+  text-align: center;
+  vertical-align: middle;
+  margin: 3%;
+
+}
+
+.about-box ul{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+
+.about-box ul li{
+  list-style: none;
+}
+
+.about-box-one {
+  background-color: white;
+  order: 1;
+}
+
+.about-box-two {
+  background-color: white;
+  order: 2;
+}
+
+.about-box-three {
+  background-color: white;
+  order: 3;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  /*margin-bottom: 20%;*/
+}
+
+@media (max-width: 700px) {
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    /*margin-bottom: 20%;*/
+  }
+  .proj {
+    border: 5px solid black;
+    padding: 15px;
+    margin: 2% auto;
+    text-align: center;
+  }
+}
+
+.proj img {
+  width: 75%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.proj {
+  list-style: none;
+  width: 75%;
+  border: 5px solid black;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  margin: 3%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.contact-container{
+  display:block;
+  padding-bottom: 5%;
+}
+
+.contact-form{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.contact-form form table tr td {
+  padding: 2px;
+}
+
+.submit-form {
+  padding: 2px;
+  text-align: center;
+  width: 100%;
+}
+
+.section-header{
+  width: 100%;
+  text-align: center;
+}

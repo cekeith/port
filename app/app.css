@@ -65,6 +65,15 @@
 .footer-container p {
   margin: auto;
 }
+.footer-container img {
+  width: 40px;
+}
+
+.footer-container .github img {
+  width: 36px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
 
 .landing-container{
   display: flex;

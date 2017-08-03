@@ -91,15 +91,32 @@
   display: flex;
   justify-content: space-around;
   margin-bottom: 10%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
   text-align: center;
 }
 
 .profile_pic-container{
+  animation-duration: 2s;
+  animation-name: bounceIn;
   padding-top: 10%;
   display: flex;
   justify-content: space-around;
+}
+
+
+@keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
 }
 
 .profile_pic-container img{
@@ -172,19 +189,16 @@
 
 .projects-container {
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  /*margin-bottom: 20%;*/
+  flex-direction: column;
+  margin-bottom: 20%;
 }
 
 @media (max-width: 700px) {
   .projects-container {
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
     padding-left: 20%;
     padding-right: 20%;
-    /*margin-bottom: 20%;*/
+    margin-bottom: 20%;
   }
   .proj {
     border: 5px solid black;
@@ -200,15 +214,22 @@
   padding-bottom: 2px;
 }
 
+.github-proj {
+  width: 15%;
+  margin: auto;
+}
+
 .proj {
   list-style: none;
-  width: 75%;
+  width: 25%;
   border: 5px solid black;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 3%;
   padding-top: 3%;
-  margin: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
   text-align: center;
   vertical-align: middle;
 }
@@ -232,6 +253,15 @@
   padding: 2px;
   text-align: center;
   width: 100%;
+}
+
+.work-container{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
 }
 
 .section-header{

@@ -238,3 +238,30 @@
   width: 100%;
   text-align: center;
 }
+
+.tic-tac-toe{
+  table {
+    color: black;
+    width: 600px;
+    height: 600px;
+    border-collapse: collapse;
+    font-size: 100px;
+    text-align: center;
+    line-height: 0;
+  }
+  td {
+    width: 200px;
+  }
+  td.bl {
+    border-left: 5px black solid;
+  }
+  td.bt {
+    border-top: 5px black solid;
+  }
+  td.br {
+    border-right: 5px black solid;
+  }
+  td.bb {
+    border-bottom: 5px black solid;
+  }
+}

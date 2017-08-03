@@ -1,5 +1,27 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+<div>
+<h1>Tic Tac Toe</h1>
+
+<table>
+  <tr>
+    <td id="cell0" class="bb br" ng-click="gameState.makePlay(0)"></td>
+    <td id="cell1" class="br bb bl" ng-click="gameState.makePlay(1)"></td>
+    <td id="cell2" class="bb bl" ng-click="gameState.makePlay(2)"></td>
+  </tr>
+  <tr>
+    <td id="cell3" class="bt br bb" ng-click="gameState.makePlay(3)"></td>
+    <td id="cell4" class="bt br bb bl" ng-click="gameState.makePlay(4)"></td>
+    <td id="cell5" class="bt bb bl" ng-click="gameState.makePlay(5)"></td>
+  </tr>
+  <tr>
+    <td id="cell6" class="bt br" ng-click="gameState.makePlay(6)"></td>
+    <td id="cell7" class="bt br bl" ng-click="gameState.makePlay(7)"></td>
+    <td id="cell8" class="bt bl" ng-click="gameState.makePlay(8)"></td>
+  </tr>
+
+</table>
+
+<h2 id="winner"></h2>
+<p id="p1Score"></p>
+<p id="p2Score"></p>
+<button name= "button" type= "button" ng-click="test()"> Play Again </button>
+</div>
